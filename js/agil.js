@@ -62,19 +62,27 @@ function mostrarPregunta() {
 function verificarRespuesta(opcionSeleccionada) {
   const q = preguntas[currentQuestion];
   const feedbackDiv = document.getElementById("feedback");
+  const isCorrect = opcionSeleccionada === q.respuestaCorrecta;
 
-  if (opcionSeleccionada === q.respuestaCorrecta) {
+  if (isCorrect) {
     feedbackDiv.innerHTML = "✅ ¡Correcto!";
   } else {
-    feedbackDiv.innerHTML = q.retroalimentacion;
+    feedbackDiv.innerHTML = `${q.retroalimentacion}<div class="boss-angry">💢 El jefe grita: ¡Esto es inaceptable! ¡Estás despedido! 😡</div>`;
   }
 
-  setTimeout(() => {
-    currentQuestion++;
-    if (currentQuestion < preguntas.length) {
-      mostrarPregunta();
-    } else {
-      document.getElementById("quiz").innerHTML = "<h2>🎉 ¡Has terminado el quiz!</h2><p>¡Gracias por participar!</p>";
-    }
-  }, 2500);
+  // Desactivar botones después de responder
+  document.querySelectorAll('.options button').forEach(btn => btn.disabled = true);
+
+  // Mostrar botón de siguiente pregunta
+  feedbackDiv.innerHTML += `<br><button onclick="siguientePregunta()">Siguiente pregunta</button>`;
 }
+
+function siguientePregunta() {
+  currentQuestion++;
+  if (currentQuestion < preguntas.length) {
+    mostrarPregunta();
+  } else {
+    document.getElementById("quiz").innerHTML = "<h2>🎉 ¡Has terminado el quiz!</h2><p>¡Gracias por participar!</p>";
+  }
+}
+
