@@ -1,0 +1,36 @@
+.methodology-cards,
+.quiz-grid,
+.roles-grid,
+.values-grid,
+.artifacts-grid,
+.principles-list {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.methodology-cards,
+.quiz-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.roles-grid,
+.values-grid,
+.artifacts-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.principles-list {
+  grid-template-columns: 1fr;
+}
+
+@media (max-width: 768px) {
+
+  .methodology-cards,
+  .quiz-grid,
+  .roles-grid,
+  .values-grid,
+  .artifacts-grid {
+    grid-template-columns: 1fr;
+  }
+}

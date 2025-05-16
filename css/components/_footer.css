@@ -1,0 +1,29 @@
+/* Estilos para el footer */
+.footer-juvenile {
+  background: #2f3542;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 20px 20px 0 0;
+}
+
+.footer-juvenile p {
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.social-icons i {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  transform: translateY(-5px) scale(1.2);
+}

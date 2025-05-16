@@ -1,0 +1,47 @@
+.intro-section-juvenile,
+.info-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.intro-section-juvenile h2,
+.info-card h2 {
+  color: #ff6b6b;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.cta-juvenile {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.cta-juvenile p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.cta-card {
+  text-align: center;
+  background: linear-gradient(135deg, #f6f9ff, #ffffff);
+  border: 2px dashed #54a0ff;
+  padding: 2rem;
+}
+
+.cta-card h2 {
+  color: #2e86de;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}

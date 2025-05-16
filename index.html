@@ -5,23 +5,99 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inicio - Quiz de Metodologías</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <nav>
-    <a href="index.html">🏠 Home</a>
-    <a href="pages/instrucciones.html">📘 Instrucciones</a>
+  <nav class="nav-juvenile">
+    <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+    <a href="pages/quiz.html"><i class="fas fa-gamepad"></i> Quiz</a>
   </nav>
 
-  <div class="card">
-    <h1>Selecciona una Metodología</h1>
-    <p>Elige una metodología para comenzar el quiz:</p>
-    <a href="pages/scrum.html"><button>SCRUM</button></a>
-    <a href="pages/agil.html"><button>Ágil</button></a>
-    <a href="pages/pmbok.html"><button>PMBOK</button></a>
-    <a href="pages/kanban.html"><button>Kanban</button></a>
-  </div>
+  <header class="hero-juvenile">
+    <div class="hero-content">
+      <h1>¡Domina las Metodologías de Gestión!</h1>
+      <p>Aprende jugando sobre Scrum, Ágil, Kanban y más</p>
+      <div class="emoji-scroll">👇</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro-section-juvenile">
+      <h2><i class="fas fa-lightbulb"></i> ¿Sabías qué?</h2>
+
+      <div class="fun-fact">
+        <div class="fact-bubble">
+          <p>El 71% de las empresas usa enfoques ágiles</p>
+        </div>
+        <div class="fact-bubble">
+          <p>Scrum viene del rugby 🏉</p>
+        </div>
+      </div>
+
+      <div class="video-container-juvenile">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9TycLR0TqFA" frameborder="0"
+          allowfullscreen></iframe>
+        <div class="video-tag">#AprendeFácil</div>
+      </div>
+
+      <div class="methodology-cards">
+        <div class="method-card scrum-card">
+          <div class="card-header">
+            <i class="fas fa-tasks"></i>
+            <h3>SCRUM</h3>
+          </div>
+          <p>Sprints, daily meetings y mucha productividad</p>
+          <a href="pages/infoScrum.html" class="card-button">Aprender <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="method-card agile-card">
+          <div class="card-header">
+            <i class="fas fa-bolt"></i>
+            <h3>ÁGIL</h3>
+          </div>
+          <p>Flexibilidad y adaptación al cambio</p>
+          <a href="pages/infoAgil.html" class="card-button">Aprender <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="method-card kanban-card">
+          <div class="card-header">
+            <i class="fas fa-columns"></i>
+            <h3>KANBAN</h3>
+          </div>
+          <p>Visualiza tu flujo de trabajo en cada instante</p>
+          <a href="pages/infoKanban.html" class="card-button">Aprender <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="method-card pmbok-card">
+          <div class="card-header">
+            <i class="fas fa-book"></i>
+            <h3>PMBOK</h3>
+          </div>
+          <p>Practicas reconocidas a nivel mundial</p>
+          <a href="pages/infoPmbok.html" class="card-button">Aprender <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="cta-juvenile">
+        <p>¿Listo para el desafío?</p>
+        <a href="pages/quiz.html" class="cta-button-juvenile">
+          ¡Jugar ahora! <i class="fas fa-trophy"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-juvenile">
+    <p>© 2025 ProjectQuiz | Hecho con <i class="fas fa-heart"></i> de estudiantes para estudiantes</p>
+    <div class="social-icons">
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

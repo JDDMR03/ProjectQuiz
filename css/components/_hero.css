@@ -1,0 +1,69 @@
+/* Estilos para secciones hero */
+.hero-juvenile {
+  background: linear-gradient(135deg, #72afd3, #a1c4fd);
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  margin-bottom: 3rem;
+}
+
+.hero-juvenile h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
+}
+
+.hero-juvenile p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.emoji-scroll {
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+}
+
+.info-hero {
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  margin-bottom: 2rem;
+}
+
+.info-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.info-hero p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-hero {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+
+  .hero-juvenile h1,
+  .info-hero h1,
+  .quiz-hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-juvenile p,
+  .info-hero p,
+  .quiz-hero p {
+    font-size: 1.2rem;
+  }
+}

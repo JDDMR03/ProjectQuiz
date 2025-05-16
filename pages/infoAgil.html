@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aprende Ágil - Metodologías Ágiles</title>
+  <link rel="icon" href="../assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="nav-juvenile">
+    <a href="../index.html"><i class="fas fa-home"></i> Inicio</a>
+    <a href="quiz.html"><i class="fas fa-gamepad"></i> Quiz</a>
+  </nav>
+
+  <header class="info-hero" style="background: linear-gradient(135deg, #00d2d3, #01a3a4);">
+    <div class="hero-content">
+      <h1><i class="fas fa-bolt"></i> Metodologías Ágiles</h1>
+      <p>Flexibilidad, adaptación y entrega continua de valor</p>
+      <div class="emoji-scroll">⚡🚀</div>
+    </div>
+  </header>
+
+  <main class="info-container">
+    <section class="info-section">
+      <div class="info-card">
+        <h2><i class="fas fa-lightbulb"></i> ¿Qué es Ágil?</h2>
+        <p>Ágil no es una metodología, ¡es una mentalidad! Es como ser un surfista 🏄‍♂️ - te adaptas a las olas
+          (cambios) en lugar de pelear contra ellas.</p>
+
+        <div class="info-highlight">
+          <img
+            src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            alt="Equipo Ágil trabajando">
+          <div class="highlight-text">
+            <p><strong>Dato curioso:</strong> El Manifiesto Ágil se creó en 2001 cuando 17 expertos se reunieron en
+              Utah. ¡Como los Avengers de la tecnología! 🦸‍♂️</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h2><i class="fas fa-scroll"></i> Los 4 Valores del Manifiesto Ágil</h2>
+
+        <div class="values-grid">
+          <div class="value-card" style="border-color: #00d2d3;">
+            <div class="value-icon">
+              <i class="fas fa-people-arrows" style="color: #00d2d3;"></i>
+            </div>
+            <h3>Individuos e interacciones</h3>
+            <p>SOBRE procesos y herramientas</p>
+          </div>
+
+          <div class="value-card" style="border-color: #54a0ff;">
+            <div class="value-icon">
+              <i class="fas fa-box-open" style="color: #54a0ff;"></i>
+            </div>
+            <h3>Software funcionando</h3>
+            <p>SOBRE documentación extensiva</p>
+          </div>
+
+          <div class="value-card" style="border-color: #ff9ff3;">
+            <div class="value-icon">
+              <i class="fas fa-handshake" style="color: #ff9ff3;"></i>
+            </div>
+            <h3>Colaboración con el cliente</h3>
+            <p>SOBRE negociación contractual</p>
+          </div>
+
+          <div class="value-card" style="border-color: #feca57;">
+            <div class="value-icon">
+              <i class="fas fa-exchange-alt" style="color: #feca57;"></i>
+            </div>
+            <h3>Respuesta al cambio</h3>
+            <p>SOBRE seguir un plan</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h2><i class="fas fa-project-diagram"></i> Marcos Ágiles más Populares</h2>
+
+        <div class="frameworks-tabs">
+          <div class="tab-buttons">
+            <button class="tab-button active" onclick="openTab(event, 'scrum-tab')">Scrum</button>
+            <button class="tab-button" onclick="openTab(event, 'kanban-tab')">Kanban</button>
+            <button class="tab-button" onclick="openTab(event, 'xp-tab')">XP</button>
+            <button class="tab-button" onclick="openTab(event, 'lean-tab')">Lean</button>
+          </div>
+
+          <div id="scrum-tab" class="tab-content" style="display: block;">
+            <h3><i class="fas fa-tasks"></i> Scrum</h3>
+            <p>El marco ágil más usado. Trabaja en sprints cortos (1-4 semanas) con roles definidos y eventos regulares.
+            </p>
+            <img
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Scrum">
+          </div>
+
+          <div id="kanban-tab" class="tab-content">
+            <h3><i class="fas fa-columns"></i> Kanban</h3>
+            <p>Sistema visual que limita el trabajo en progreso. Perfecto para flujos continuos de trabajo.</p>
+            <img
+              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Kanban">
+          </div>
+
+          <div id="xp-tab" class="tab-content">
+            <h3><i class="fas fa-code"></i> Extreme Programming (XP)</h3>
+            <p>Enfocado en calidad técnica con prácticas como programación en pareja y desarrollo guiado por pruebas.
+            </p>
+            <img
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="XP">
+          </div>
+
+          <div id="lean-tab" class="tab-content">
+            <h3><i class="fas fa-car"></i> Lean</h3>
+            <p>Elimina desperdicios y maximiza el valor. Viene de Toyota y se aplica al desarrollo de software.</p>
+            <img
+              src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Lean">
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h2><i class="fas fa-check-double"></i> Principios Ágiles Clave</h2>
+
+        <div class="principles-list">
+          <div class="principle-item">
+            <div class="principle-number">1</div>
+            <div class="principle-text">
+              <h3>Satisfacción del cliente</h3>
+              <p>Entregar software valioso temprano y continuamente</p>
+            </div>
+          </div>
+
+          <div class="principle-item">
+            <div class="principle-number">2</div>
+            <div class="principle-text">
+              <h3>Aceptar el cambio</h3>
+              <p>Bienvenidos los requisitos cambiantes, incluso tarde</p>
+            </div>
+          </div>
+
+          <div class="principle-item">
+            <div class="principle-number">3</div>
+            <div class="principle-text">
+              <h3>Entregas frecuentes</h3>
+              <p>Desde un par de semanas hasta un par de meses</p>
+            </div>
+          </div>
+
+          <div class="principle-item">
+            <div class="principle-number">4</div>
+            <div class="principle-text">
+              <h3>Trabajo en equipo</h3>
+              <p>Negocios y desarrolladores colaborando diariamente</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h2><i class="fas fa-video"></i> Ágil en 5 minutos</h2>
+
+        <div class="video-container-juvenile">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Z9QbYZh1YXY" frameborder="0"
+            allowfullscreen></iframe>
+          <div class="video-tag">#ÁgilFácil</div>
+        </div>
+      </div>
+
+      <div class="info-card cta-card">
+        <h2><i class="fas fa-graduation-cap"></i> ¿Listo para el desafío Ágil?</h2>
+        <p>Ahora que conoces los fundamentos, ¡demuestra lo que has aprendido!</p>
+        <a href="agil.html" class="cta-button-juvenile" style="background: linear-gradient(45deg, #00d2d3, #01a3a4);">
+          ¡Hacer el Quiz Ágil! <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-juvenile">
+    <p>© 2025 ProjectQuiz | Hecho con <i class="fas fa-heart"></i> de estudiantes para estudiantes</p>
+    <div class="social-icons">
+    </div>
+  </footer>
+
+
+  <script>
+    function openTab(evt, tabName) {
+      // Oculta todos los contenidos de pestañas
+      const tabContents = document.getElementsByClassName("tab-content");
+      for (let i = 0; i < tabContents.length; i++) {
+        tabContents[i].style.display = "none";
+      }
+
+      // Elimina la clase 'active' de todos los botones
+      const tabButtons = document.getElementsByClassName("tab-button");
+      for (let i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].className = tabButtons[i].className.replace(" active", "");
+      }
+
+      // Muestra la pestaña actual y agrega la clase 'active' al botón
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+</body>
+
+</html>

@@ -4,26 +4,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiz PMBOK</title>
+  <title>Quiz PMBOK - Gestión de Proyectos</title>
+  <link rel="icon" href="../assets/logo.png" type="image/png">
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/pages/_quiz.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-  <nav>
-    <a href="../index.html">🏠 Home</a>
-    <a href="instrucciones.html">📘 Instrucciones</a>
+  <nav class="nav-juvenile">
+    <a href="../index.html"><i class="fas fa-home"></i> Inicio</a>
+    <a href="quiz.html"><i class="fas fa-gamepad"></i> Quiz</a>
   </nav>
 
-  <div class="card" id="intro">
-    <h1>Quiz de Metodología PMBOK</h1>
-    <p>Responde correctamente para demostrar tu dominio del enfoque tradicional de gestión de proyectos.</p>
-    <button onclick="startQuiz()">Comenzar Quiz</button>
-  </div>
+  <header class="info-hero" style="background: linear-gradient(135deg, #291056, #1a0a3a);">
+    <div class="hero-content">
+      <h1><i class="fas fa-book"></i> Quiz PMBOK: Proyecto "SmartCity"</h1>
+      <p>Demuestra tus conocimientos de gestión tradicional de proyectos</p>
+      <div class="emoji-scroll">🏗️📊🏙️</div>
+    </div>
+  </header>
 
-  <div class="card" id="quiz" style="display: none;">
-    <div id="question-container"></div>
-  </div>
+  <main class="quiz-container">
+    <div class="quiz-progress">
+      <div class="progress-bar" id="progressBar"></div>
+      <div class="progress-text">Pregunta <span id="currentQuestion">1</span> de 10</div>
+    </div>
+
+    <div class="quiz-scenario">
+      <h2><i class="fas fa-project-diagram"></i> Contexto del Proyecto</h2>
+      <p>Eres el Project Manager del proyecto "SmartCity", una iniciativa para modernizar la infraestructura tecnológica
+        de la ciudad. El proyecto está en su fase inicial y debes aplicar los conocimientos del PMBOK para garantizar su
+        éxito.</p>
+      <img
+        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+        alt="Proyecto SmartCity">
+    </div>
+
+    <div id="quizContent">
+      <!-- Las preguntas se cargarán aquí dinámicamente -->
+    </div>
+
+    <div class="quiz-feedback" id="quizFeedback" style="display: none;">
+      <div class="feedback-content">
+        <h3><i class="fas fa-comment-dots"></i> <span id="feedbackTitle"></span></h3>
+        <p id="feedbackText"></p>
+        <img id="feedbackImage" src="" alt="Feedback image"
+          style="max-width: 100%; border-radius: 8px; margin-top: 15px;">
+        <button class="cta-button-juvenile" id="nextButton"
+          style="background: linear-gradient(45deg, #291056, #1a0a3a); margin-top: 20px;">
+          Siguiente Pregunta <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="quiz-results" id="quizResults" style="display: none;">
+      <h2><i class="fas fa-trophy"></i> Resultados del Proyecto "SmartCity"</h2>
+      <div class="result-card">
+        <div class="result-score">
+          <div class="score-circle" id="scoreCircle">
+            <span id="finalScore">0</span>%
+          </div>
+          <h3 id="resultTitle">¡Desastre total!</h3>
+        </div>
+        <p id="resultDescription">El proyecto ha fracasado completamente y el equipo está desmoralizado.</p>
+        <img id="resultImage"
+          src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          alt="Resultado">
+
+        <div class="result-details">
+          <h4><i class="fas fa-chart-pie"></i> Análisis del Proyecto</h4>
+          <div class="result-metrics">
+            <div class="metric">
+              <div class="metric-bar" id="scopeMetric"></div>
+              <span>Gestión del Alcance</span>
+            </div>
+            <div class="metric">
+              <div class="metric-bar" id="timeMetric"></div>
+              <span>Cumplimiento de Cronograma</span>
+            </div>
+            <div class="metric">
+              <div class="metric-bar" id="costMetric"></div>
+              <span>Control de Costos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-actions">
+          <button class="cta-button-juvenile" id="restartQuiz"
+            style="background: linear-gradient(45deg, #291056, #1a0a3a);">
+            <i class="fas fa-redo"></i> Intentar de nuevo
+          </button>
+          <a href="infoPmbok.html" class="cta-button-juvenile"
+            style="background: linear-gradient(45deg, #7209b7, #560bad);">
+            <i class="fas fa-book"></i> Repasar conceptos
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-juvenile">
+    <p>© 2025 ProjectQuiz | Hecho con <i class="fas fa-heart"></i> de estudiantes para estudiantes</p>
+    <div class="social-icons">
+    </div>
+  </footer>
 
   <script src="../js/pmbok.js"></script>
 </body>

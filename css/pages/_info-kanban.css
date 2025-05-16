@@ -1,0 +1,43 @@
+/* Estilos específicos para info-kanban */
+.info-hero[style*="kanban"] h1 {
+  color: white;
+}
+
+.kanban-feature {
+  background: rgba(95, 39, 205, 0.1);
+  border-left: 4px solid #5f27cd;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.kanban-tip {
+  background: #f0e6ff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.kanban-tip::before {
+  content: "💡";
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  font-size: 1.5rem;
+  background: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .kanban-tip::before {
+    left: 10px;
+    top: -10px;
+  }
+}

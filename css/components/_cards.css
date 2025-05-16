@@ -1,0 +1,222 @@
+.method-card {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-top: 5px solid;
+  text-align: center;
+}
+
+.method-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.scrum-card {
+  border-color: #54a0ff;
+}
+
+.agile-card {
+  border-color: #00d2d3;
+}
+
+.kanban-card {
+  border-color: #5f27cd;
+}
+
+.pmbok-card {
+  border-color: #291056;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-header i {
+  font-size: 2rem;
+}
+
+.scrum-card .card-header i {
+  color: #54a0ff;
+}
+
+.agile-card .card-header i {
+  color: #00d2d3;
+}
+
+.kanban-card .card-header i {
+  color: #5f27cd;
+}
+
+.pmbok-card .card-header i {
+  color: #291056;
+}
+
+.card-header h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.method-card p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-option-juvenile {
+  display: block;
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.quiz-option-juvenile:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.quiz-option-juvenile::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.quiz-option-juvenile:hover::after {
+  opacity: 1;
+}
+
+.scrum-option {
+  border-color: #54a0ff;
+}
+
+.agile-option {
+  border-color: #00d2d3;
+}
+
+.pmbok-option {
+  border-color: #5f27cd;
+}
+
+.kanban-option {
+  border-color: #ff9ff3;
+}
+
+.option-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+.scrum-option .option-icon {
+  background: rgba(84, 160, 255, 0.2);
+  color: #54a0ff;
+}
+
+.agile-option .option-icon {
+  background: rgba(0, 210, 211, 0.2);
+  color: #00d2d3;
+}
+
+.pmbok-option .option-icon {
+  background: rgba(95, 39, 205, 0.2);
+  color: #5f27cd;
+}
+
+.kanban-option .option-icon {
+  background: rgba(255, 159, 243, 0.2);
+  color: #ff9ff3;
+}
+
+.play-text {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.scrum-option .play-text {
+  background: rgba(84, 160, 255, 0.1);
+  color: #54a0ff;
+}
+
+.agile-option .play-text {
+  background: rgba(0, 210, 211, 0.1);
+  color: #00d2d3;
+}
+
+.pmbok-option .play-text {
+  background: rgba(95, 39, 205, 0.1);
+  color: #5f27cd;
+}
+
+.kanban-option .play-text {
+  background: rgba(255, 159, 243, 0.1);
+  color: #ff9ff3;
+}
+
+.quiz-option-juvenile:hover .play-text {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateX(5px);
+}
+
+/* Estilos específicos para Kanban */
+.kanban-card .card-header i {
+  color: #5f27cd;
+}
+
+.kanban-option {
+  border-color: #5f27cd;
+}
+
+.kanban-option .option-icon {
+  background: rgba(95, 39, 205, 0.2);
+  color: #5f27cd;
+}
+
+.kanban-option .play-text {
+  background: rgba(95, 39, 205, 0.1);
+  color: #5f27cd;
+}
+
+/* Estilos específicos para PMBOK */
+.pmbok-card .card-header i {
+  color: #291056;
+}
+
+.pmbok-option {
+  border-color: #291056;
+}
+
+.pmbok-option .option-icon {
+  background: rgba(41, 16, 86, 0.2);
+  color: #291056;
+}
+
+.pmbok-option .play-text {
+  background: rgba(41, 16, 86, 0.1);
+  color: #291056;
+}

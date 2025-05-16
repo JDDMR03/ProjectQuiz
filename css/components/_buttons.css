@@ -1,0 +1,93 @@
+.cta-button-juvenile {
+  display: inline-block;
+  background: linear-gradient(45deg, #ff6b6b, #ff9ff3);
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+  animation: pulse 2s infinite;
+}
+
+.cta-button-juvenile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 107, 107, 0.6);
+}
+
+.card-button {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.scrum-card .card-button {
+  background: #54a0ff;
+  color: white;
+}
+
+.agile-card .card-button {
+  background: #00d2d3;
+  color: white;
+}
+
+.kanban-card .card-button {
+  background: #5f27cd;
+  color: white;
+}
+
+.pmbok-card .card-button {
+  background: #291056;
+  color: white;
+}
+
+.card-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tab-button {
+  padding: 0.8rem 1.5rem;
+  background: #f1f2f6;
+  border: none;
+  border-radius: 50px;
+  font-family: 'Comic Neue', sans-serif;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+  background: #dfe4ea;
+}
+
+.tab-button.active {
+  background: #00d2d3;
+  color: white;
+}
+
+/* Estilos específicos para botones Kanban */
+.kanban-option .card-button {
+  background: #5f27cd;
+  color: white;
+}
+
+.kanban-option .card-button:hover {
+  background: #341f97;
+}
+
+/* Estilos específicos para botones PMBOK */
+.pmbok-option .card-button {
+  background: #291056;
+  color: white;
+}
+
+.pmbok-option .card-button:hover {
+  background: #1a0a3a;
+}
